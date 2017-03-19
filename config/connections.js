@@ -26,7 +26,7 @@ module.exports.connections = {
   * Local disk storage for DEVELOPMENT ONLY                                  *
   *                                                                          *
   * Installed by default.                                                    *
-  *                                                                          *
+  *                                                                          *dir
   ***************************************************************************/
   /*localDiskDb: {
     adapter: 'sails-disk'
@@ -40,10 +40,11 @@ module.exports.connections = {
         password: '1234',
         host: 'ANDREA-VAIO',
         database: 'projectoAdm',
+        port: 49170,
         // I've had to use this option in some cases
         // where the SQL Server refuses my user otherwise
         options: {
-            encrypt: false
+            encrypt: true
         }
   }
 
