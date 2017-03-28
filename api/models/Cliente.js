@@ -23,11 +23,6 @@ module.exports = {
       type: 'integer',
       unique: false
     },
-      Clave: {
-      type: 'string',
-      size:20,
-      required: true
-    },
      vehiculos: {
       collection:'Vehiculo',
       via: 'idcliente'

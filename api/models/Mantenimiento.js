@@ -11,25 +11,19 @@ module.exports = {
 
   attributes: {
     Fentrega: {
-      type: 'date',
-      notNull: true,
-      required: true
+      type: 'date'
     },
 
     Fingreso: {
-      type: 'date',
-      notNull: true,
-      required: true
+      type: 'date'
     },
 
     Fsalida: {
-      type: 'date',
-      required: true
+      type: 'date'
     },
 
     Estado: {
-      type: 'boolean',
-      notNull: true
+      type: 'boolean'
     },
     idvehiculo: {
       model: 'Vehiculo'

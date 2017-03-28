@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 
 	<title>MiTaller</title>
+
 
   <meta charset="UTF-8">
 
@@ -31,101 +33,72 @@
 <body>
 <header>
 	 <nav>
-   
-  <ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">Iniciar Sesión</a></li>
-  <li><a href="#!">Registrarse</a></li>
-	</ul>
-	<nav>
-  	<div class="nav-wrapper transparent">
 
-    <a href="/" class="brand-logo">Mi Taller</a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+  <nav>
+    <div class="nav-wrapper transparent">
 
-    <ul class="right hide-on-med-and-down">
-
-    
-
-      <li><a href="#">Inicio</a></li>
-
-      <li><a href="#">Registro</a></li>
-
-      <!-- Dropdown Trigger -->
-      <li><a href="#">Consultas</a></li>
-    </ul>
-
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="">Consultar vehículo</a></li>
-        <li><a href="">Consultar cliente</a></li>
-      </ul>
+    <a href="/" class="brand-logo"><i class="material-icons">home</i></a>
     </div>
   </nav>
 </nav>
 </header>
+<br>
+<br>
+
 
 <section>
-<br>
-<br>
 
 <!-- AQUI COMIENZA EL FORMULARIO-->
 
     <div class="row">
-    <form class="col s12">
+    <form class="col s12" action="/Cliente/create" method="POST" >
 
       <div class="row">
-
         <div class="input-field col s4 offset-s4">
-          <input id="getmarca" type="text" class="validate">
-          <label for="Marca">Marca</label>
+          <input id="getnombre" name="Nombre" type="text" class="validate" >
+          <label class ="active" for="nombre">Nombre</label>
         </div>
         </div>
 
         <div class="row">
         <div class="input-field col s4 offset-s4">
-          <input id="getmodelo" type="text" class="validate">
-          <label for="Modelo">Modelo</label>
+          <input id="getapellido" type="text" name="Apellido" class="validate">
+          <label class ="active" for="apellido">Apellido</label>
         </div>
       </div>
 
         <div class="row">
         <div class="input-field col s4 offset-s4">
-          <input id="gettipo" type="text" class="validate">
-          <label for="Tipo">Tipo</label>
+          <input id="getcedula" type="number" class="validate" name="Cedula">
+          <label class ="active" for="cedula">Cedula</label>
         </div>
       </div>      
 
       <div class="row">
 
         <div class="input-field col s4 offset-s4">
-          <input id="gettaño" type="number" class="validate">
-          <label for="Año">Año</label>
+          <input id="gettelefono" type="number" class="validate" name="Telefono">
+          <label class ="active" for="telefono">Teléfono</label>
         </div>
         </div>
 
 
       <div class="row">
         <div class="input-field col s4 offset-s4">
-          <input id="getcilindrada" type="number" class="validate">
-          <label for ="Cilindrada">Cilindrada</label>
+          <input placeholder="huellas@gmail.com" id="getemail" name="Correo" type="email" class="validate">
+          <label class ="active" class ="active" for="email" data-error="Correo inválido" data-success="Correo válido">Correo</label>
         </div>
       </div>
 
       <div class="row">
-        <div class="input-field col s4 offset-s4">
-          <input  id="getplaca" type="text">
-          <label for="Placa">Placa</label>
-        </div>
-      </div>      
-
-
-
-    </form>
-    <div class="row">
     <div class="input-field col s4 offset-s4">
-      <button onclick="" class="btn waves-effect waves-light" type="submit" name="action">Confirmar
+      <button class="btn waves-effect waves-light" type="submit" class="lato">Confirmar
   </button>
   </div>
     </div>
+
+    </form>
+    
   </div>
 
 </section>
@@ -134,17 +107,9 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
   
+      <script src="js/jquery.js" ></script>
       
-      <script>
 
-        $( document ).ready(function(){
-
-          $(".button-collapse").sideNav();
-          $('.slider').slider({height: 590});
-          
-          });
-
-      </script>
 
 </body>
 </html>

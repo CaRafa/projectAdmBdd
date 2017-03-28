@@ -1,3 +1,10 @@
+0
+
+3
+3
+
+
+*-*
 # The robots.txt file is used to control how search engines index your live URLs.
 # See http://sailsjs.org/documentation/anatomy/my-app/assets/robots-txt for more information.
 

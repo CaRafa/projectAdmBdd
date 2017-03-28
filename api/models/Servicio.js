@@ -17,10 +17,6 @@ module.exports = {
       required: true
     },
 
-    Estado: {
-      type: 'boolean'
-    },
-
     Costo: {
       type: 'integer',
       notNull: true

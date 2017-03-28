@@ -2,8 +2,6 @@
 <html>
 <head>
 
-	<title>MiTaller</title>
-
   <title>MiTaller</title>
 
   <meta charset="UTF-8">
@@ -32,102 +30,97 @@
 
 <body>
 <header>
-	 <nav>
+   <nav>
    
-   <ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">Iniciar Sesión</a></li>
-  <li><a href="#!">Registrarse</a></li>
-  </ul>
+  
   <nav>
     <div class="nav-wrapper transparent">
 
-    <a href="/" class="brand-logo">Mi Taller</a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-
-    <ul class="right hide-on-med-and-down">
+    <a href="/" class="brand-logo"><i class="material-icons">home</i></a>
+ 
 
     
-
-      <li><a href="#">Inicio</a></li>
-
-      <li><a href="#">Registro</a></li>
-
-      <!-- Dropdown Trigger -->
-      <li><a href="#">Consultas</a></li>
-    </ul>
-
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="">Consultar vehículo</a></li>
-        <li><a href="">Consultar cliente</a></li>
-      </ul>
     </div>
   </nav>
 </nav>
 </header>
-<br>
-<br>
+
 <section>
+<br>
+<br>
 
 <!-- AQUI COMIENZA EL FORMULARIO-->
 
-    <div class="row">
-    <form class="col s12">
+    <form class="col s12" action="/Vehiculo/create" method="POST">
+
+    <input type='hidden' name='idcliente' value='<%= Cliente %>' >
 
       <div class="row">
 
         <div class="input-field col s4 offset-s4">
-          <input id="getnombre" type="text" class="validate">
-          <label for="nombre">Nombre</label>
+          <input id="getmarca" type="text" class="validate" name="Marca">
+          <label class ="active" for="Marca">Marca</label>
         </div>
         </div>
 
         <div class="row">
         <div class="input-field col s4 offset-s4">
-          <input id="getapellido" type="text" class="validate">
-          <label for="apellido">Apellido</label>
+          <input id="getmodelo" type="text" class="validate" name="Modelo">
+          <label class ="active" for="Modelo">Modelo</label>
         </div>
       </div>
 
         <div class="row">
         <div class="input-field col s4 offset-s4">
-          <input id="getcedula" type="number" class="validate">
-          <label for="cedula">Cedula</label>
+          <input id="gettipo" type="text" class="validate" name="Tipo">
+          <label class ="active" for="Tipo">Tipo</label>
         </div>
       </div>      
 
       <div class="row">
 
         <div class="input-field col s4 offset-s4">
-          <input id="gettelefono" type="number" class="validate">
-          <label for="telefono">Teléfono</label>
+          <input id="gettaño" type="number" class="validate" name="Ano">
+          <label class ="active" for="Año">Año</label>
         </div>
         </div>
 
 
       <div class="row">
         <div class="input-field col s4 offset-s4">
-          <input placeholder="huellas@gmail.com" id="getemail" type="email" class="validate">
-          <label class ="active" for="email" data-error="Correo inválido" data-success="Correo válido">Correo</label>
+          <input id="getcilindrada" type="number" name="Cilindro" class="validate">
+          <label class ="active" for ="Cilindrada">Cilindrada</label>
         </div>
       </div>
 
+      
+
+      <div class="row">
+        <div class="input-field col s4 offset-s4">
+          <input  id="getplaca" type="text" name="Placa">
+          <label class ="active" for="Placa">Placa</label>
+        </div>
+      </div>      
+
+      <div class="row">
+          <div class="input-field col s4 offset-s4">
+               <button class="btn waves-effect waves-light" type="submit" class="lato">Confirmar
+              </button>
+          </div>
+    </div>
+      
+
 
     </form>
-    <div class="row">
-    <div class="input-field col s4 offset-s4">
-      <button onclick="" class="btn waves-effect waves-light" type="submit" name="action">Confirmar
-  </button>
-  </div>
-    </div>
-  </div>
+    
+  
 
 </section>
 
-	  <!--Import jQuery before materialize.js-->
+    <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
   
-      <script src="js/jquery.js" ></script>
       
       <script>
 

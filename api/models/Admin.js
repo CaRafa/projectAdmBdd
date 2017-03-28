@@ -1,5 +1,5 @@
 /**
- * Usuario.js
+ * Admin.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -7,17 +7,18 @@
 
 module.exports = {
 
-	connection: 'sqlserver',
+  attributes: {
 
- 	 attributes: {
-
- 	 	Nombre: {
-     	type: 'string',
-      	size: 45,
-      	notNull: true,
-      	required: true
-    	}
-
-  	}
+  	 Correo: {
+      type: 'email',
+      email: true,
+      notNull: true
+    },
+    Clave: {
+      type: 'string',
+      size:20,
+      required: true
+    }
+  }
 };
 

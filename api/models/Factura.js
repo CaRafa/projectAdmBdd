@@ -25,8 +25,7 @@ module.exports = {
     },
 
     Fpago: {
-      type: 'date',
-      notNull: true
+      type: 'date'
     },
 
       idMant: {
